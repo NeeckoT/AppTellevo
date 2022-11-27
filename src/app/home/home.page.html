@@ -1,20 +1,27 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+ 
+  <ion-toolbar color="warning">
     <ion-title>
-      Blank
+      TeLlevoApp
     </ion-title>
+    <div class="ini">
+      <a href="login">
+      <ion-icon name="person-circle-outline" color="dark"></ion-icon>
+    </a>
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menuId="custom-menu"></ion-menu-button>
+    </ion-buttons>
+
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+ <div class="map" #map></div>
 </ion-content>
+
+
+
+

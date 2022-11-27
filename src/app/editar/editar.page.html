@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <img src="assets/icon/duoc.png" alt="">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header color="warning">
+      <ion-card-title>Editar Perfil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="add-outline"></ion-icon>
+        <ion-label>Foto</ion-label>
+        <img src="" alt="">
+        
+      </ion-item>
+        <ion-item>
+          
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Cambiar contraseña</ion-label>
+          <ion-input formControlName="password" type="password" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar contraseña</ion-label>
+          <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
+        </ion-item>
+        <br>
+        <div class="apli">
+        <ion-button color="warning">Aplicar
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-footer>
+  
+    <ion-button color="dark" [routerLink]="['/home']">Volver</ion-button>
+  
+</ion-footer>
+
+</ion-content>
