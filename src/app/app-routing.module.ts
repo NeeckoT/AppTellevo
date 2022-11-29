@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'portal',
     pathMatch: 'full'
   },
   {
@@ -30,6 +30,18 @@ const routes: Routes = [
   {
     path: 'homeconductor',
     loadChildren: () => import('./homeconductor/homeconductor.module').then( m => m.HomeconductorPageModule)
+  },
+  {
+    path: 'portal',
+    loadChildren: () => import('./portal/portal.module').then( m => m.PortalPageModule)
+  },
+  {
+    path: 'viaje',
+    loadChildren: () => import('./viaje/viaje.module').then( m => m.ViajePageModule)
+  },
+  {
+    path: 'pago',
+    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
   },
 ];
 

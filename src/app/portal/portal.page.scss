@@ -1,0 +1,20 @@
+img {
+    width: 1000px;
+    height: 650px;
+}
+
+ion-content  img{
+    background-image:-moz-linear-gradient()
+}
+
+ion-button {
+    display:block;
+    margin:auto;
+    padding: 5px;
+}
+
+ion-footer h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}

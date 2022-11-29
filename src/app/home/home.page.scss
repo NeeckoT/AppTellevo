@@ -94,3 +94,9 @@ ion-toolbar{
 .map.visible {
   opacity: 1;
 }
+
+ion-footer ion-button {
+  display:block;
+    margin:auto;  
+    padding: 10px;
+}

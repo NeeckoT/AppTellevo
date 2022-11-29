@@ -1,9 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>homeconductor</ion-title>
+<ion-header [translucent]="true">
+ 
+  <ion-toolbar color="warning">
+    <ion-title>
+      TeLlevoApp
+    </ion-title>
+    <div class="ini">
+      <a href="login">
+      <ion-icon name="person-circle-outline" color="dark"></ion-icon>
+    </a>
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menuId="custom-menu"></ion-menu-button>
+    </ion-buttons>
+
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+ <div class="map" #map></div>
 </ion-content>
