@@ -23,10 +23,7 @@ const routes: Routes = [
     path: 'loginauto',
     loadChildren: () => import('./loginauto/loginauto.module').then( m => m.LoginautoPageModule)
   },
-  {
-    path: 'editar',
-    loadChildren: () => import('./editar/editar.module').then( m => m.EditarPageModule)
-  },
+  
   {
     path: 'homeconductor',
     loadChildren: () => import('./homeconductor/homeconductor.module').then( m => m.HomeconductorPageModule)
