@@ -74,7 +74,52 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-fondo-oscuro-duoc: #012840;
+	--ion-color-fondo-oscuro-duoc-rgb: 1,40,64;
+	--ion-color-fondo-oscuro-duoc-contrast: #ffffff;
+	--ion-color-fondo-oscuro-duoc-contrast-rgb: 255,255,255;
+	--ion-color-fondo-oscuro-duoc-shade: #012338;
+	--ion-color-fondo-oscuro-duoc-tint: #1a3e53;
+
+  --ion-color-fondo-claro-duoc: #F2A81D;
+	--ion-color-fondo-claro-duoc-rgb: 242,168,29;
+	--ion-color-fondo-claro-duoc-contrast: #000000;
+	--ion-color-fondo-claro-duoc-contrast-rgb: 0,0,0;
+	--ion-color-fondo-claro-duoc-shade: #d5941a;
+	--ion-color-fondo-claro-duoc-tint: #f3b134;
+
+  --ion-color-facebook: #0583F2;
+	--ion-color-facebook-rgb: 5,131,242;
+	--ion-color-facebook-contrast: #ffffff;
+	--ion-color-facebook-contrast-rgb: 255,255,255;
+	--ion-color-facebook-shade: #0473d5;
+	--ion-color-facebook-tint: #1e8ff3;
+
+  --ion-color-twitter: #0597F2;
+	--ion-color-twitter-rgb: 5,151,242;
+	--ion-color-twitter-contrast: #ffffff;
+	--ion-color-twitter-contrast-rgb: 255,255,255;
+	--ion-color-twitter-shade: #0485d5;
+	--ion-color-twitter-tint: #1ea1f3;
+
+  --ion-color-whatsapp: #41BF49;
+	--ion-color-whatsapp-rgb: 65,191,73;
+	--ion-color-whatsapp-contrast: #000000;
+	--ion-color-whatsapp-contrast-rgb: 0,0,0;
+	--ion-color-whatsapp-shade: #39a840;
+	--ion-color-whatsapp-tint: #54c55b;
+  
+  --ion-color-google: #F2B544;
+	--ion-color-google-rgb: 242,181,68;
+	--ion-color-google-contrast: #000000;
+	--ion-color-google-contrast-rgb: 0,0,0;
+	--ion-color-google-shade: #d59f3c;
+	--ion-color-google-tint: #f3bc57;
+  
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   /*
@@ -232,5 +277,64 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+
+    
+
   }
+}
+
+
+
+.ion-color-fondo-oscuro-duoc {
+	--ion-color-base: var(--ion-color-fondo-oscuro-duoc);
+	--ion-color-base-rgb: var(--ion-color-fondo-oscuro-duoc-rgb);
+	--ion-color-contrast: var(--ion-color-fondo-oscuro-duoc-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-fondo-oscuro-duoc-contrast-rgb);
+	--ion-color-shade: var(--ion-color-fondo-oscuro-duoc-shade);
+	--ion-color-tint: var(--ion-color-fondo-oscuro-duoc-tint);
+}
+
+.ion-color-fondo-claro-duoc {
+	--ion-color-base: var(--ion-color-fondo-claro-duoc);
+	--ion-color-base-rgb: var(--ion-color-fondo-claro-duoc-rgb);
+	--ion-color-contrast: var(--ion-color-fondo-claro-duoc-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-fondo-claro-duoc-contrast-rgb);
+	--ion-color-shade: var(--ion-color-fondo-claro-duoc-shade);
+	--ion-color-tint: var(--ion-color-fondo-claro-duoc-tint);
+}
+
+.ion-color-facebook {
+	--ion-color-base: var(--ion-color-facebook);
+	--ion-color-base-rgb: var(--ion-color-facebook-rgb);
+	--ion-color-contrast: var(--ion-color-facebook-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
+	--ion-color-shade: var(--ion-color-facebook-shade);
+	--ion-color-tint: var(--ion-color-facebook-tint);
+}
+
+.ion-color-twitter {
+	--ion-color-base: var(--ion-color-twitter);
+	--ion-color-base-rgb: var(--ion-color-twitter-rgb);
+	--ion-color-contrast: var(--ion-color-twitter-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-twitter-contrast-rgb);
+	--ion-color-shade: var(--ion-color-twitter-shade);
+	--ion-color-tint: var(--ion-color-twitter-tint);
+}
+
+.ion-color-whatsapp {
+	--ion-color-base: var(--ion-color-whatsapp);
+	--ion-color-base-rgb: var(--ion-color-whatsapp-rgb);
+	--ion-color-contrast: var(--ion-color-whatsapp-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-whatsapp-contrast-rgb);
+	--ion-color-shade: var(--ion-color-whatsapp-shade);
+	--ion-color-tint: var(--ion-color-whatsapp-tint);
+}
+
+.ion-color-google {
+	--ion-color-base: var(--ion-color-google);
+	--ion-color-base-rgb: var(--ion-color-google-rgb);
+	--ion-color-contrast: var(--ion-color-google-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-google-contrast-rgb);
+	--ion-color-shade: var(--ion-color-google-shade);
+	--ion-color-tint: var(--ion-color-google-tint);
 }

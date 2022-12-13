@@ -3,12 +3,12 @@ ion-menu ion-content {
         font-family: lato;
     }
     letter-spacing: 0.5px;
-    --background: rgb(107, 111, 121);
+    --background: rgb(229, 255, 0);
     .main-header {
         height: 25vh;
         width: 120%;
-        background: rgb(219, 223, 0);
-        border-radius: 0 0 50% 50%;
+        background: rgb(229, 255, 0);
+        
         margin-left: -4.5vh;
         div {
             transform: translateY(3vh);
@@ -17,7 +17,7 @@ ion-menu ion-content {
                 height: 10vh;
                 background: var(--ion-color-white);
                 margin-bottom: 5px;
-                border: 7px solid var(--ion-color-primary);
+                
             }
             ion-label {
                 font-weight: bold;
@@ -57,7 +57,8 @@ ion-label {
     color: white;
 }
 ion-text {
-    color: white;
+    color: rgb(0, 0, 0);
+    
 }
 
 ion-list ion-item {
@@ -92,4 +93,10 @@ ion-footer ion-icon {
 
 ion-footer ion-item {
     --background: rgb(241, 241, 139);
+}
+
+img{
+
+    width: 250px;
+    
 }

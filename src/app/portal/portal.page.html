@@ -1,17 +1,30 @@
 <ion-header>
-  <ion-toolbar color="warning">
+  <ion-toolbar color="fondo-oscuro-duoc">
+    <p style="text-align: center;">
+      <img src="assets/icon/duoc.png" alt="">
+    </p>
     <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="fondo-oscuro-duoc">
 
-  <ion-img src="assets/icon/duocc.jpg" ></ion-img>
+  <ion-card color="fondo-claro-duoc">
+    <ion-img src="assets/icon/Logo Te Llevo App.png" class="ion-padding"></ion-img>
+    
+    <ion-button color="fondo-oscuro-duoc" [routerLink]="['/login']" >Registrarse</ion-button>
+  </ion-card>
+  
 
-<ion-button color="warning" [routerLink]="['/home']" >Ingresar</ion-button>
-<ion-button color="warning" [routerLink]="['/login']" >Registrarse</ion-button>
-
-<ion-footer>
-    <H1>BIENVENIDes</H1>
-</ion-footer>
 </ion-content>
+
+<ion-footer >
+  <ion-list color="fondo-oscuro-duoc">
+    <ion-item  slot="icon-only" color="fondo-oscuro-duoc" >
+      <ion-icon name="logo-facebook" color="facebook" class="ion-padding" ></ion-icon>
+      <ion-icon name="logo-twitter" color="twitter" class="ion-padding"></ion-icon>
+      <ion-icon name="logo-whatsapp" color="whatsapp" class="ion-padding"></ion-icon>
+      <ion-icon name="logo-google" color="google" class="ion-padding"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-footer>

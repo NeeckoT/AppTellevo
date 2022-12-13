@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <img src="assets/icon/duoc.png" alt="">
+    <p style="text-align: center;">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <img src="assets/icon/duoc.png" alt="">
+    </p>
     <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 
 
@@ -16,7 +22,7 @@
     <ion-card-content>
       <form [formGroup]="formularioLogin">
         <ion-item>
-          <ion-label position="floating">Nombre</ion-label>
+          <ion-label position="floating">Usuario</ion-label>
           <ion-input formControlName="nombre"></ion-input>
         </ion-item>
         <ion-item>
@@ -26,30 +32,12 @@
       </form>
       <br>
           <ion-button color="warning" class="ingreso" (click)="ingresar()">
-        Ingresar
+        Iniciar Sesión
       </ion-button>
-      <ion-buttons slot="start">
-        <ion-button>aaaaa</ion-button>
-      </ion-buttons>
+      <ion-button color="warning" [routerLink]="['/registro']">Registrarse</ion-button>
     </ion-card-content>
   </ion-card>
 
-
+</ion-content>
 
   
-</ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button [routerLink]="['/loginauto']">Conductor</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>
-
-<ion-footer>
-  <ion-toolbar color="warning">
-    <ion-buttons slot="end">
-      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>
