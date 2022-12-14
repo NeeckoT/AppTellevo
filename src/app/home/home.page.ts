@@ -3,12 +3,15 @@ import { Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '
 import { ActionSheetController } from '@ionic/angular';
 
 declare var google: { maps: { DirectionsService: new () => any; DirectionsRenderer: new () => any; }; };
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit, OnDestroy {
+
+  
 
   @ViewChild('map', {static: true}) mapElementRef: ElementRef;
   googleMaps: any;
@@ -17,6 +20,7 @@ export class HomePage implements OnInit, OnDestroy {
   mapClickListener: any;
   markerClickListener: any;
   markers: any[] = [];
+
 
 
   constructor(
