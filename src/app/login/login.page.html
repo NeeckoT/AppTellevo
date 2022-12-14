@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-toolbar color="dark">
+  <ion-toolbar color="fondo-claro-duoc">
     <p style="text-align: center;">
       <ion-buttons slot="start">
         <ion-back-button></ion-back-button>
       </ion-buttons>
-      <img src="assets/icon/duoc.png" alt="">
+      <img src="assets/icon/duoc.png" style="background-color: azure; border-radius: 10px; padding: 0px 5px 5px 5px; width: 80%; height: 80%;">
     </p>
     <ion-title></ion-title>
   </ion-toolbar>
@@ -14,28 +14,30 @@
 
 
 
-<ion-content>
-  <ion-card >
-    <ion-card-header color="warning">
+<ion-content color="fondo-oscuro-duoc">
+  <ion-card color="fondo-claro-duoc">
+    <ion-card-header >
       <ion-card-title>Login</ion-card-title>
     </ion-card-header>
+
     <ion-card-content>
       <form [formGroup]="formularioLogin">
-        <ion-item>
+        <ion-item color="fondo-claro-duoc">
           <ion-label position="floating">Usuario</ion-label>
           <ion-input formControlName="nombre"></ion-input>
         </ion-item>
-        <ion-item>
+        <ion-item color="fondo-claro-duoc">
           <ion-label position="floating">Contraseña</ion-label>
           <ion-input formControlName="password" type="password"></ion-input>
         </ion-item>
       </form>
       <br>
-          <ion-button color="warning" class="ingreso" (click)="ingresar()">
+          <ion-button color="fondo-oscuro-duoc" class="ingreso" (click)="ingresar()">
         Iniciar Sesión
       </ion-button>
-      <ion-button color="warning" [routerLink]="['/registro']">Registrarse</ion-button>
+      <ion-button color="fondo-oscuro-duoc" [routerLink]="['/registro']">Registrarse</ion-button>
     </ion-card-content>
+
   </ion-card>
 
 </ion-content>

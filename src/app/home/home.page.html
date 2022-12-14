@@ -1,15 +1,11 @@
 <ion-header [translucent]="true">
  
-  <ion-toolbar color="warning">
-    <ion-title>
-      <br>
-      <img src="assets/icon/duoc.png" alt="">
-      <br>
-    </ion-title>
+  <ion-toolbar color="fondo-claro-duoc" >
+    <img src="assets/icon/duoc.png" style="height: 60%; width: 60%; margin-left: 50px;" >
     <div class="ini">
       <a href="login">
-      <ion-icon name="exit-outline" color="dark"></ion-icon>
-    </a>
+        <ion-icon name="exit-outline" color="dark"></ion-icon>
+      </a>
     </div>
 
     <ion-buttons slot="start">
@@ -19,13 +15,30 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
- <div class="map" #map></div>
+
+
+
+
+
+<ion-content>
+  <div class="map" style="height: 50%; width: 90%; margin-left: 5%; margin-top: 25px; position: static;" #map></div>
+
+  <ion-card color="fondo-claro-duoc">
+    <ion-item color="fondo-claro-duoc">
+      <ion-label position="floating" style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Destino</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>    
+
+    <ion-item color="fondo-oscuro-duoc" class="ion-margin" style="--border-radius: 15px;">
+      <ion-buttons slot="start">
+        <ion-icon slot="start" name="car-sport"></ion-icon>
+        <ion-button class="ion-margin" style="--border-radius: 15px;" [routerLink]="['/viaje']">¡Pide tu viaje!</ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-card>
+
+
 </ion-content>
-<ion-footer>
-  <ion-button color="dark" [routerLink]="['/viaje']">Pide tu viaje </ion-button>
- 
- </ion-footer>
 
 
 

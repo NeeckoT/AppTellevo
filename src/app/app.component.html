@@ -1,19 +1,20 @@
-<ion-split-pane contentId="main-content">
-  <ion-menu menuId="custom-menu" contentId="main-content" type="overlay">
+<ion-split-pane contentId="main-content" color="fondo-oscuro-duoc">
+  <ion-menu menuId="custom-menu" contentId="main-content" type="overlay" color="fondo-oscuro-duoc">
     
-    <ion-content>
-      <ion-list class="ion-text-center main-header">
-        <div align="center">
+    <ion-content color="fondo-oscuro-duoc">
+      <ion-list class="ion-text-center main-header" color="fondo-oscuro-duoc">
+        <div align="center" color="fondo-oscuro-duoc">
           <ion-avatar>
             <br>
             <img src="assets/icon/gatoo.jpg" alt="">
           </ion-avatar>
-          <ion-label>
+          <ion-label color="fondo-oscuro-duoc">
             <p>
               <br>
-              <ion-text> <h2>
-                Usuario
-              </h2>
+              <ion-text color="fondo-oscuro-duoc"> 
+                <h2>
+                  Usuario
+                </h2>
             </ion-text>
             </p>
           </ion-label>
@@ -21,18 +22,22 @@
       </ion-list>
       
       <br><br>
-      <ion-button color="dark" [routerLink]="['/homeconductor']">
-        Conductor
-      </ion-button>
-      <ion-button color="dark" [routerLink]="['/home']">
-        Pasajero
-      </ion-button>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <ion-menu-toggle [routerLink]="['/homeconductor']">
+        <ion-item color="fondo-claro-duoc" class="ion-padding" detail lines="none">
+          <ion-icon slot="start" name="car"></ion-icon>
+          <h3>Conductor</h3>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle [routerLink]="['/home']" >
+        <ion-item color="fondo-claro-duoc" class="ion-padding" detail lines="none">
+          <ion-icon slot="start" name="person"></ion-icon>
+          <h3>Pasajero</h3>
+        </ion-item>
+      </ion-menu-toggle>
+
+
       <br>
       <br>
       <br>

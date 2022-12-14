@@ -1,23 +1,55 @@
 <ion-header [translucent]="true">
  
-  <ion-toolbar color="warning">
-    <ion-title>
-      TeLlevoApp
-    </ion-title>
-    <div class="ini">
-      <a href="login">
-      <ion-icon name="person-circle-outline" color="dark"></ion-icon>
-    </a>
-    </div>
-
+  <ion-toolbar color="fondo-claro-duoc">
     <ion-buttons slot="start">
       <ion-menu-button menuId="custom-menu"></ion-menu-button>
     </ion-buttons>
-
+    <img src="assets/icon/duoc.png" style="height: 60%; width: 60%; margin-left: 50px;" >
     
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-card color="fondo-claro-duoc">
+
+    <ion-card-header color="fondo-claro-duoc">
+      <ion-card-title style="color: white; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 60px;">Viajemos</ion-card-title>
+    </ion-card-header>
+
+    <ion-item color="fondo-claro-duoc">
+      <ion-label position="floating"  style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Origen</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="fondo-claro-duoc">
+      <ion-label position="floating" style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Destino</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="fondo-claro-duoc">
+      <ion-label position="floating" style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Capacidad</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="fondo-claro-duoc" >
+      <ion-datetime presentation="time" style="--background: #F2A81D; color:white"></ion-datetime>
+    </ion-item>
+
+    <ion-item color="fondo-oscuro-duoc" class="ion-margin" style="--border-radius: 15px;">
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-icon slot="start" name="car-sport" size="large"></ion-icon>¡Vamos!</ion-button>
+      </ion-buttons>
+    </ion-item>
+
+
+  </ion-card>
+
  <div class="map" #map></div>
+
+
+
+
+
 </ion-content>

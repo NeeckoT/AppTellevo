@@ -1,36 +1,35 @@
 <ion-header>
-  <ion-toolbar color="dark">
+  <ion-toolbar color="fondo-claro-duoc">
     <p style="text-align: center;">
       <ion-buttons slot="start">
         <ion-back-button></ion-back-button>
       </ion-buttons>
-      <img src="assets/icon/duoc.png" alt="">
+      <img src="assets/icon/duoc.png" style="background-color: azure; border-radius: 10px; padding: 0px 5px 5px 5px; width: 80%; height: 80%;">
     </p>
-    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header color="warning">
+  <ion-card color="fondo-claro-duoc">
+    <ion-card-header color="fondo-claro-duoc">
       <ion-card-title>Registro</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content color="fondo-claro-duoc">
       <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
-        <ion-item>
+        <ion-item color="fondo-claro-duoc">
           <ion-label position="floating">Usuario</ion-label>
           <ion-input formControlName="nombre"></ion-input>
-        </ion-item>
-        <ion-item>
+        </ion-item >
+        <ion-item color="fondo-claro-duoc">
           <ion-label position="floating">Contraseña</ion-label>
           <ion-input formControlName="password" type="password" ></ion-input>
         </ion-item>
-        <ion-item>
+        <ion-item color="fondo-claro-duoc">
           <ion-label position="floating">Confirmar contraseña</ion-label>
           <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
         </ion-item>
         <br>
-        <ion-button color="warning" (click)="guardar()">Registrarse
+        <ion-button color="fondo-oscuro-duoc" (click)="guardar()">Registrarse
         </ion-button>
       </form>
     </ion-card-content>

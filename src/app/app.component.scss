@@ -7,7 +7,7 @@ ion-menu ion-content {
     .main-header {
         height: 25vh;
         width: 120%;
-        background: rgb(229, 255, 0);
+        background: #012840;
         
         margin-left: -4.5vh;
         div {
@@ -57,13 +57,10 @@ ion-label {
     color: white;
 }
 ion-text {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
     
-}
-
-ion-list ion-item {
-    --background: rgb(241, 241, 139);
-    padding: 0px;
 }
 
 ion-content ion-button {
@@ -72,13 +69,7 @@ ion-content ion-button {
     padding: 5px;
 }
 
-ion-content ion-footer {
-    padding: 50px;
-    zoom: normal;
-    margin: auto;
-    display: block;
-   
-}
+
 ion-content ion-list {
     --background: rgb(241, 241, 139);
     padding: 0px;
@@ -89,10 +80,6 @@ ion-footer ion-icon {
     zoom: normal;
     margin: auto;
     display: block;
-}
-
-ion-footer ion-item {
-    --background: rgb(241, 241, 139);
 }
 
 img{
